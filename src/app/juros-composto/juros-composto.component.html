@@ -1,0 +1,11 @@
+<h1>Calculadora Juros Composto</h1>
+
+    <div>Valor:</div>
+    <input type="number" step="0.01" [(ngModel)]="value" />
+    <div>Juros:</div>
+    <input type="number" step="0.01" [(ngModel)]="rate" />
+    <div>Mês</div>
+    <input type="number" [(ngModel)]="months" /><br />
+    <!-- <button (click)="calcular()" class="btn btn-primary">Calcular</button> -->
+    <h3>{{ calcular() | currency }}</h3>
+

@@ -1,0 +1,14 @@
+<h1>Escolha o Juros</h1>
+<input type="radio" [(ngModel)] = "option" [value] = "1">Juros Simples<br>
+<input type="radio" [(ngModel)] = "option" [value] = "2">Juros Composto
+
+<h2>Opção: {{option}}</h2>
+<div *ngIf="option == 1">
+  <app-juros-simples></app-juros-simples>
+</div>
+<div *ngIf="option == 2">
+<app-juros-composto></app-juros-composto>
+</div>
+
+
+
